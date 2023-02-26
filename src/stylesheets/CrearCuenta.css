@@ -1,0 +1,39 @@
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+.contenedor-CrearCuenta {
+    padding-top: 50px;
+    padding-right: 150px;
+    display: flex;
+    flex: 1 1;
+    justify-content: space-between;
+
+}
+
+.iniciar-btn {
+    font-weight: 400;
+    color: rgb(64, 64, 186);
+    opacity: 80%;
+    cursor: pointer;
+}
+.already {
+    font-size: 11.5px;
+    padding: 10px 9px 25px;
+    color: #37677e;
+}
+
+.Title {
+    color: #0e4a67;
+    font-size: 26px;
+    
+}
+.title-title {
+    font-weight: 700;
+}
+.o-label {
+    font-size: 20px;
+    padding: 10px 0px 10px 156px;
+    
+}
+

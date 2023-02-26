@@ -1,0 +1,25 @@
+
+.contenedor-rest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 190px;
+    transition: all 1s ease 0s;
+}
+
+.title-rest {
+    padding-top: 30px;
+    padding-bottom: 45px;
+    padding-left: 30px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #0e4a67;
+}
+
+.contenedor-1, .contenedor-2 {
+    display: inline-block;
+    height: 90px; /* o cualquier altura que desees */
+
+  }

@@ -1,0 +1,20 @@
+.login-textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-size: 9px;
+    padding-bottom: 15px;
+}
+.box-label {
+    height: 43px;
+    width: 336.69px;
+    border: 1.6px solid #207198;    
+    border-radius: 8.6147px;
+    padding-left: 15px;
+    color: #207198;
+}
+.login-label {
+    padding: 5px 10px;
+    color: rgba(32, 113, 152, 1);
+
+}

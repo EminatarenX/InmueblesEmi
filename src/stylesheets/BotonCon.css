@@ -1,0 +1,70 @@
+*{
+    
+}
+
+.contenedor-con {
+    padding-bottom: 30px;
+}
+.boton-con-google {
+    width: 354.69px;
+    height: 43.07px;
+    color: rgb(56, 110, 171);
+    font-weight: 400;
+    border-color: rgba(32, 113, 152, 1);
+    background-color:rgba(227, 241, 254, 1);
+    backdrop-filter: blur(1.43578px);
+    border-radius: 8.6147px;
+    border: 2px solid;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    font-size: 11.5px;
+}
+
+.boton-con-facebook {
+    width: 354.69px;
+    height: 43.07px;
+    color: rgb(56, 110, 171);
+    font-weight: 400;
+    border-color: rgba(32, 113, 152, 1);
+    background-color:rgba(227, 241, 254, 1);
+    backdrop-filter: blur(1.43578px);
+    border-radius: 8.6147px;
+    border: 2px solid;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    font-size: 11.5px;
+    
+
+}
+
+
+.img-con {
+    padding-left: 60px;
+    padding-right: 20px;
+}
+
+.boton-con-google:hover {
+    background: linear-gradient(90deg, rgb(109, 172, 255) 0%, rgb(119, 255, 124) 53%, rgba(255, 69, 69, 0.753) 100%);
+    color: white;
+    
+    
+}
+
+.boton-con-facebook:hover {
+    background: linear-gradient(90deg, rgba(67, 149, 255, 0.712) 0%, rgba(0, 62, 233, 0.733) 53%, rgba(0, 60, 255, 0.829) 100%);
+    color: white;
+    
+}
+
+.boton-con-facebook {
+    transition: color 0.4s linear 0s;
+}
+
+.boton-con-google {
+    transition: all 0.4s linear 0s;
+    
+}

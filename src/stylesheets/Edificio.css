@@ -1,0 +1,49 @@
+.contenedor-main{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contenedor-text {
+  margin-top: 45px;
+}
+
+.agregar-btn {
+  margin-top: 16px;
+  height: 50px;
+  width: 354px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #004175 5.47%, #001e80b0 87.5%);
+  border: none;
+  color: white;
+  font-weight: 700;
+  transition: 800ms ease-in-out;
+  cursor: pointer;
+}
+
+.agregar-btn:hover {
+  scale: 1.1;
+}
+
+.categoria {
+  font-size: 11px;
+  color:rgb(22, 76, 121)
+}
+
+#inmueble-select {
+  height: 44px;
+  width: 356px;
+  border-radius:8px;
+  border-color: #004075ad;
+  border-width: 2px;
+}
+
+option {
+  background-color: rgb(22, 76, 121);
+  color: white;
+  
+}
+.contenedor-lista {
+  margin: 30px 100px 0 200px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}

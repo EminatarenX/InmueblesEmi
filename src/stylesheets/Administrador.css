@@ -1,0 +1,27 @@
+.contenedor-inicio {
+  display: flex;
+  flex-direction: column;
+  margin: 100%;
+}
+
+
+
+.inicio-titulo {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 30px;
+  color: rgb(38, 48, 80);
+}
+
+.contenedor-herramientas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.opciones {
+  margin: 4px;
+  font-variant: small-caps;
+}

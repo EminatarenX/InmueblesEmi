@@ -1,0 +1,39 @@
+.contenedor-login {
+  margin-right: 250px;
+  display: flex;
+  flex-direction: column ;
+  border: cyan;
+  width: 250px;
+  height: 300px;
+  justify-content: left;
+  align-items:first baseline;
+  padding-top: 12px;
+}
+
+.iniciar-sesion {
+  color: rgba(14, 74, 103, 1);
+  font-weight: 700;
+  font-size: 26px;
+  padding-bottom: 15px;
+}
+.login-registrar {
+  padding-left: 14px;
+  font-size: 11px;
+  color: #37677E;
+}
+.registrar-alterno {
+  color:rgb(22, 18, 255);
+  font-size: 10px;
+  opacity: 70%;
+  font-weight: 400;
+  cursor: pointer;
+}
+.login-titulo {
+  padding-bottom:25px;
+}
+.forgot {
+  padding: 15px;
+  color: rgba(32, 113, 152, 1);
+  font-weight: 400;
+  font-size: 11.5px;
+}
