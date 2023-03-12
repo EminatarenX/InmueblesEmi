@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Modificar from '../pages/Modificar';
 import Configuracion from '../pages/Configuracion';
 import { useState } from 'react';
+import { UserMain } from '../pages/UserMain';
   
 function App() {
 
@@ -18,16 +19,19 @@ function App() {
   const [showMofificar, setModificar] = useState(false);
   const [showConfiguracion, setConfiguracion] = useState(false);
 
+  
+
   return (
     <BrowserRouter>
       <Routes>
         <Route>
-          <Route path='/'  element={<Login/>}/>
+          <Route path='/login'  element={<Login/>}/>
           <Route path='/inicio' element={<Inicio/>}/>
           <Route path='/crear' element={<CrearCuenta/>}/>
           <Route path='/restablecer' element={<Restablecer/>}/>
           <Route path='/modificar' element={<Modificar/>}/>
           <Route path='/configuracion' element={<Configuracion/>}/>
+          <Route path='/' element={<UserMain/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

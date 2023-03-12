@@ -1,0 +1,137 @@
+
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 24px;
+  background-color: #0d181e;
+  height: 77px;
+  min-width: 756px;
+}
+
+.nav-links {
+  color: white;
+}
+.nav-opciones {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+  width: 314px;
+  height: 56px;
+}
+.titulo {
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.bienvenida-container {
+  background-color: hsla(201, 29%, 9%, 0.993);
+  height: 450px;
+  display: flex;
+}
+
+.contenedor-titulo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 100px 200px;
+}
+.edificio-img {
+  position: absolute;
+  left: 850px;
+  scale: 0.9;
+  top: 59px;
+}
+.edificio-img2 {
+  position: absolute;
+  left: 600px;
+  scale: 0.83;
+  filter: opacity(20%);
+
+}
+
+.edificio-img3 {
+  position: absolute;
+  top: 131px;
+  left: 300px;
+  scale: 0.60;
+  filter: opacity(5%);
+
+}
+.edificio-img4 {
+  position: absolute;
+  top: 131px;
+  left: 20px;
+  scale: 0.60;
+  filter: opacity(1%);
+
+}
+
+.nosotros-container {
+  background-color: #091117;
+  min-height: 800px;
+  display: flex;
+  min-width: 700px;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 760px){
+  .contenedor-section {
+    flex-direction: column;
+    margin: 0;
+  }
+  .contenedor-titulo{
+    scale: 0.8;
+   padding:0;
+   align-items: center;
+
+  }
+  .lanzamientos-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+}
+
+.contenedor-section {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  margin: 50px 100px;
+  gap: 100px;
+}
+
+.nosotros-titulo {
+  color:white;
+  font-weight: 900;
+  letter-spacing: 0.21rem;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-top: 80px;
+  
+}
+
+.subtitulos {
+  font-weight: 900;
+  letter-spacing: 0.21rem;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.secciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.lanzamientos-container {
+  background-color: hsla(201, 29%, 9%, 0.993);
+  min-height: 800px;
+}

@@ -1,49 +1,82 @@
-.contenedor-main{
+.contenedor-main {
   display: flex;
   justify-content: space-evenly;
 }
 
 .contenedor-text {
   margin-top: 45px;
-}
-
-.agregar-btn {
-  margin-top: 16px;
-  height: 50px;
-  width: 354px;
-  border-radius: 8px;
-  background: linear-gradient(90deg, #004175 5.47%, #001e80b0 87.5%);
-  border: none;
-  color: white;
-  font-weight: 700;
-  transition: 800ms ease-in-out;
-  cursor: pointer;
-}
-
-.agregar-btn:hover {
-  scale: 1.1;
+  width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .categoria {
   font-size: 11px;
-  color:rgb(22, 76, 121)
+  color: rgb(22, 76, 121);
 }
 
 #inmueble-select {
   height: 44px;
-  width: 356px;
-  border-radius:8px;
+  width: 340px;
+  border-radius: 8px;
   border-color: #004075ad;
   border-width: 2px;
+  font-size: small;
 }
+
 
 option {
   background-color: rgb(22, 76, 121);
   color: white;
-  
 }
+
 .contenedor-lista {
   margin: 30px 100px 0 200px;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto;
 }
+
+.input-nuevo {
+  height: 43px;
+  width: 336.69px;
+  border: 1.6px solid #207198;
+  border-radius: 8.6147px;
+  padding-left: 15px;
+  color: #207198;
+}
+
+.login-textbox {
+  font-size: 11px;
+}
+
+.agregar-btn {
+  margin-top: 20px;
+  height: 50px;
+  width: 340px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #004875 5.47%, #001e80b0 87.5%) !important;
+  border: none;
+  color: white;
+  font-weight: 700;
+  transition: 500ms ease-in-out;
+  cursor: pointer;
+}
+
+.agregar-btn:hover {
+  scale: 1.02;
+  opacity: 90%;
+}
+
+
+.picChange {
+  height: 280px;
+  scale: 1.7;
+  margin-bottom: 100px;
+
+}
+
+.contenedor-edificio {
+  background: linear-gradient(90deg, #000b29 5.47%, #00284e 87.5%) !important;
+}
+

@@ -1,0 +1,89 @@
+.contenedor-inmueble {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  
+}
+
+.contenedor-todo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.cont-inmueble {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  border-radius: 10px;
+  max-width: 450px;
+  margin-bottom: 50px;
+  background: linear-gradient(271.15deg, #00528d 7.64%, #002344 90.68%), #EE5757!important;
+}
+.imagen-inmueble{
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  transition: .5s ease;
+}
+.imagen-inmueble:hover {
+  scale: 1.1;
+  transition: 0.3s ease;
+}
+.cont-botones {
+  display: flex;
+  justify-content: space-around;
+}
+
+.editar-btn {
+  margin-top: 5px;
+  background: linear-gradient(271.15deg, #0066af 7.64%, #000096 90.68%), #EE5757!important;
+  border :none;
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+  color: rgb(241, 233, 233);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.eliminar-btn {
+  margin-top: 5px;
+  background: linear-gradient(271.15deg, #ff2b2b 7.64%, #cb0000 90.68%), #EE5757!important;
+  border :none;
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(236, 234, 234);
+  font-weight: 700;
+  transition: 0.5s ease;
+}
+.eliminar-btn:hover,.editar-btn:hover {
+  scale: 1.02;
+  filter: brightness(2);
+
+}
+
+.nombre-inmueble {
+  font-size: 34px;
+  font-weight: 700;
+  transition: .8s ease;
+}
+
+.caracteristicas {
+  transition: .8s ease;
+}
+.nombre-inmueble:hover, .caracteristicas:hover {
+  transition: .4s ease;
+  scale: 1.08;
+}

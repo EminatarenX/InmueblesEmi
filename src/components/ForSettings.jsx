@@ -27,6 +27,7 @@ function ForSettings() {
             Actualizar Informacion
           </button>
     </div>
+    
     </>
   )
 }
