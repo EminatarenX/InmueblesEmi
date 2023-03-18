@@ -40,3 +40,19 @@
 .login-label {
     font-size: 10px;
 }
+.boton{
+    width: 354.69px;
+    height: 43.07px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    border:none;
+    background: linear-gradient(271.15deg, #140FFF 7.64%, #4C92FB 90.68%), #EE5757!important;
+    backdrop-filter: blur(1.43578px);
+    border-radius: 8.6147px;
+    cursor: pointer;
+}
+
+.alert{
+    
+}

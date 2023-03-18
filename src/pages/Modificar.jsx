@@ -1,9 +1,14 @@
 import React from "react";
 import Edificios from '../components/Edificios'
 
-function Modificar() {
+function Modificar({inmuebles, setInmuebles, inmueble,setInmueble}) {
   return(
-    <Edificios/>
+    <Edificios
+    inmuebles={inmuebles}
+    setInmuebles={setInmuebles}
+    inmueble={inmueble}
+    setInmueble={setInmueble}
+    />
   )
 }
 

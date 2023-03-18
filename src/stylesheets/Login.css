@@ -5,9 +5,11 @@
   border: cyan;
   width: 250px;
   height: 300px;
-  justify-content: left;
-  align-items:first baseline;
+  /* justify-content: left;
+  align-items:first baseline; */
   padding-top: 12px;
+  position: fixed;
+  right: 1px;
 }
 
 .iniciar-sesion {
@@ -55,4 +57,11 @@
 .sesion-btn:hover {
   scale: 1.02;
   opacity: 90%;
+}
+
+@media (max-width: 700px) {
+  .contenedor-login{
+    margin-left: 50px;
+    scale: 1.3  ;
+  }
 }

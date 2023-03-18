@@ -2,11 +2,16 @@ import React from "react"
 import Img from './imgInicio'
 import Log from "./Log"
 import '../stylesheets/Main.css'
-function MainLogin (){
+function MainLogin ({usuarios,usuarioActual, setUsuarioActual,setEnLogin}){
   return (
     <div className="Main">
     <Img />
-    <Log />
+    <Log 
+      usuarios={usuarios}
+      usuarioActual={usuarioActual}
+      setUsuarioActual={setUsuarioActual}
+      setEnLogin={setEnLogin}
+    />
       
   </div>
   )

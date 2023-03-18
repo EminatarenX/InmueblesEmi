@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import '../stylesheets/Login.css'
 import BotonCon from './BotonCon'
 import { Link } from "react-router-dom"
@@ -6,19 +6,54 @@ import { useState } from "react"
 import Swal from "sweetalert2"
 import {motion as m} from 'framer-motion'
 
-function Log(){
+function Log({usuarios,usuarioActual, setUsuarioActual,setEnLogin}){
 const admin = 'emi@admin.com'
 const passAdmin = 'admin1234'
 const [esAdmin,setEsAdmin] = useState(false);
 const [correo, setCorreo] = useState('')
 const [password, setPassword] = useState('')
 
-
 const handleSubmit = (e) => {
-  e.preventDefault();
- 
-  
+  e.preventDefault()  
+  if(correo == admin && password == passAdmin){
+    setEsAdmin(true)
+    window.location.href = '/inicio';
+    return
+  }
 
+  const usuarioEncontrado = usuarios.find((usuario) => {
+    return usuario.email === correo && usuario.contra === password
+  })
+//vamos a modificar solo esta funcion para ver si puedo
+
+//o veremos
+const usuarioFind = usuarios.find(usuario => usuario.email === correo && usuario.contra === password);
+
+
+  
+  console.log(usuarioFind.user)
+  setUsuarioActual(usuarioFind.user)
+  if(usuarioEncontrado) {
+    Swal.fire({
+      title: `Bienvenido ${usuarioFind.user}`,
+      icon: 'success'
+    })
+    setTimeout(() => {
+      console.log(usuarioFind.user)
+      setEnLogin(false)
+      // window.location.href = '/'
+    },1500)
+    
+    
+  }else{
+    Swal. fire({
+      icon: 'error',
+      title: 'Usuario o password incorrecto',
+    })
+  }
+
+  
+  
 };
 
 const alertaError = (mensaje) => {
@@ -29,6 +64,10 @@ const alertaError = (mensaje) => {
     footer: '<a href="">Intentalo de nuevo!!!</a>'
   })
 }
+
+  useEffect(()=> {
+    localStorage.setItem('usuarioActual' , JSON.stringify(usuarioActual))
+  },[usuarioActual])
 
   return(
     
@@ -44,9 +83,12 @@ const alertaError = (mensaje) => {
       }}
       className="login-titulo">
         <p className="iniciar-sesion">Iniciar sesion</p>
-        <p className="login-registrar">No tienes cuenta? <Link to={"/crear"} style={{textDecoration: 'none'}}><strong className="registrar-alterno">Registrate</strong></Link></p>
+        <p className="login-registrar">No tienes cuenta? <Link
+         to={"/crear"} 
+         style={{textDecoration: 'none'}} 
+         ><strong className="registrar-alterno">Registrate</strong></Link></p>
       </m.div>
-      <form onSubmit={handleSubmit}>
+      <form >
       <m.div
       initial={{ x:1000}}
       animate={{ x:0}}
@@ -73,7 +115,7 @@ const alertaError = (mensaje) => {
             <input type='password'className="box-label" value={password}
             onChange={(e) => setPassword(e.target.value)}/>
           </m.div>
-          <Link to={'/inicio'} style={{textDecoration: 'none'}}>
+          <Link to={esAdmin ? '/inicio' : '/login'} style={{textDecoration: 'none'}}>
         <m.input
         initial={{ x:1000}}
         animate={{ x:0}}
@@ -82,7 +124,7 @@ const alertaError = (mensaje) => {
           delay: 0.1,
           ease: [0, 0.71, 0.2, 1.01]
         }}
-        type="submit" value={'Iniciar Sesion'} className="sesion-btn"/>
+        type="submit" value={'Iniciar Sesion'} className="sesion-btn" onClick={handleSubmit}/>
       </Link>
       </form>
       

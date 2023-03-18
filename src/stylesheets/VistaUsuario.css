@@ -28,11 +28,32 @@
 }
 
 .bienvenida-container {
-  background-color: hsla(201, 29%, 9%, 0.993);
   height: 450px;
   display: flex;
+   min-width: 700px;
+   background-image: url(../img/imagenUsuario.jpg);
+   position: relative;
+   background-size: cover;
+   isolation: isolate;
+   
 }
 
+.bienvenida-container::after {
+ content: '';
+ position:absolute;
+ z-index: -1;
+ inset: 0;
+ background: black;
+ opacity: .8;
+}
+
+@media (max-width: 1000px) {
+  .bienvenida-container{
+    align-items: center;
+    flex-direction: column;
+  }
+}
+  
 .contenedor-titulo {
   display: flex;
   flex-direction: column;
@@ -134,4 +155,5 @@
 .lanzamientos-container {
   background-color: hsla(201, 29%, 9%, 0.993);
   min-height: 800px;
+   min-width: 700px;
 }

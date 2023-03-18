@@ -1,0 +1,28 @@
+.local {
+  background-image: url(../img/LocalVIsion.png);
+}
+
+.piso {
+  background-image: url(../img/Livingroom.jpg);
+}
+
+.edificio {
+  background-image: url(../img/edificiospros.png);
+}
+.local,.edificio,.piso {
+  background-size: cover;
+  position: relative;
+  isolation: isolate;
+}
+.local::after,.edificio::after,.piso::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-color: rgb(11, 2, 3);
+  opacity: .6;
+  
+}
+
+
+

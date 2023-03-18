@@ -37,6 +37,39 @@ option {
   grid-template-columns: auto auto;
 }
 
+@media (max-width: 1200px){
+  .contenedor-lista{
+    grid-template-columns: auto;
+    margin-left: 150px;
+    
+  }
+  .contenedor-text{
+    flex-direction: column;
+  }
+  
+}
+
+@media (max-width: 580px) {
+  .contenedor-lista{
+    grid-template-columns: auto;
+    margin-left: 50px;
+    scale: 0.8;
+    margin-top: 0px;
+    
+  }
+  .contenedor-text{
+    flex-direction: column;
+    scale: 0.9;
+  }
+  .login-textbox,.categoria-sec,.agregar-btn{
+    margin-top: 10px;
+    scale: 1.4;
+  }
+  .categoria-sec{
+    margin-bottom: 30px;
+  }
+}
+
 .input-nuevo {
   height: 43px;
   width: 336.69px;
@@ -44,7 +77,7 @@ option {
   border-radius: 8.6147px;
   padding-left: 15px;
   color: #207198;
-}
+} 
 
 .login-textbox {
   font-size: 11px;

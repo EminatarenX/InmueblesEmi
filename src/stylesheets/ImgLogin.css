@@ -3,4 +3,17 @@
     width: 433px;
     padding-top: 90px;
     padding-left: 35%;
+    scale: 1.5;
+}
+
+@media (min-width: 1172px) {
+    .login-img {
+        scale: 2;
+    }
+}
+
+@media (max-width: 1070px) {
+    .login-img {
+        scale: 1;
+    }
 }

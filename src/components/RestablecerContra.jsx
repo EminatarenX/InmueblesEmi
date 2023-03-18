@@ -25,7 +25,7 @@ function Restablecer() {
     label="Contraseña nueva"/>
     <TextBox
     label='Confirmar contraseña'/>
-    <Link to={"/"} style={{textDecoration: 'none'}}>
+    <Link to={"/login"} style={{textDecoration: 'none'}}>
       <Boton
       inside ='Restablecer'/>
     </Link>

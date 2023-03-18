@@ -88,6 +88,7 @@ const Inmueble = ({
           Eliminar
         </button>
       </div>
+      
     </m.div>
   );
 };

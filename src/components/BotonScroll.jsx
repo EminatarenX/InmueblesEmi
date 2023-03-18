@@ -53,8 +53,8 @@ const BotonScroll = () => {
           textAlign: 'center'
           
         }}> 
-        {/* <BiChevronsUp/>  */}
-        <FaAccessibleIcon/>
+        <BiChevronsUp/> 
+        {/* <FaAccessibleIcon/> */}
         </m.button>
       )}
     </div>

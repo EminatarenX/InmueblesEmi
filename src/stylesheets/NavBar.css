@@ -58,3 +58,25 @@
   display: flex;
   gap: 16px;
 }
+
+@media (max-width: 700px){
+  .navBar{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 200px;
+    padding: 0;
+  }
+  .nav-botones{
+    flex-direction: column;
+    gap: 0;
+  }
+  .admin-btn, .cerrar-btn{
+    min-width: 600px; 
+    border-radius: 0px;
+    min-height: 74px;
+    gap: 0px;
+    
+  }
+  
+}

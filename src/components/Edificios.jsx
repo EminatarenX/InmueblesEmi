@@ -1,18 +1,19 @@
 import React, {useRef} from "react";
 import NavBar from "./NavBar";
-import Herramientas from "./Herramientas";
 import "../stylesheets/Edificio.css";
 import Swal from "sweetalert2";
 import Inmueble from "./Inmueble";
-import { useState,useEffect } from "react";
+import { useState,useEffect,createContext } from "react";
 import administraPic from '../img/Administra.png'
 import ModificaPic from '../img/Modifica.png'
 import {motion as m} from 'framer-motion'
 import ModificarAlert from "./ModificarAlert";
 
-function Edificio() {
-  const [inmuebles, setInmuebles] = useState([]);
-  const [inmueble, setInmueble] = useState({});
+
+export const DataContext = createContext(null)
+
+function Edificio({inmuebles, setInmuebles, inmueble,setInmueble}) {
+
   const [nombre, setNombre] = useState('');
   const [propietario, setPropietario] = useState('');
   const [descripcion, setDescripcion] = useState('');
@@ -20,7 +21,7 @@ function Edificio() {
   const [error, setError] = useState(false);
   const [modificar, setModificar] = useState(false)
   const [alertaModify, setAlertaModify] = useState(false)
-  const topRef = useRef(null)
+
 
   const eliminarInmueble = id => {
     const inmueblesActualidados = inmuebles.filter(inmueble => inmueble.id !== id)
@@ -135,10 +136,12 @@ function Edificio() {
   },[inmuebles])
 
   return (
-    
+    <>
+    {alertaModify && (<ModificarAlert/>)}
     <div className="contenedor-edificio" ref={scroll}>
+      
       <NavBar />
-      {alertaModify && (<ModificarAlert/>)}
+      
       <div className="contenedor-main" >
         <div className="contenedor-text">
           <m.img
@@ -197,7 +200,7 @@ function Edificio() {
                 onChange={(e) => setDescripcion(e.target.value)}
               />
             </div>
-
+            <div className="categoria-sec">
             <label className="categoria">Categoria:</label>
             <br />
             <select
@@ -212,7 +215,7 @@ function Edificio() {
               <option value="local">Local</option>
             </select>
             <br />
-            
+            </div>
             <input
               value={!modificar ? "Agregar Inmueble" : "Modificar"}
               type="submit"
@@ -222,8 +225,8 @@ function Edificio() {
         </div>
         
       </div>
-      <div className="contenedor-lista">
-        {inmuebles.map((inmueble) => (
+      <div className="contenedor-lista " >
+        {inmuebles.map(inmueble => (
           <Inmueble 
           inmueble={inmueble} 
           setInmueble={setInmueble} 
@@ -232,8 +235,9 @@ function Edificio() {
           />
         ))}
       </div>
-      
+
     </div>
+    </>
   );
 }
 
